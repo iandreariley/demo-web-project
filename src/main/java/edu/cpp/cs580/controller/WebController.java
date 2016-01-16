@@ -36,6 +36,13 @@ public class WebController {
 	 */
 	@Autowired
 	private UserManager userManager;	
+	
+	@RequestMapping(value = "/cs580/greetingsEarthing")
+	String starman() {
+		return "There's a Staaaaaaaaaaaaaaaaaaaaaaarman, waiting in the sky. " +
+				"He'd like to come and meet us, but he thinks he'd blow our " +
+				"minds.";
+	}
 
 	/**
 	 * This is a simple example of how the HTTP API works.
