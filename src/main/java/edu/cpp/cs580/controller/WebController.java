@@ -27,24 +27,6 @@ import edu.cpp.cs580.data.provider.UserManager;
 public class WebController {
 
 	/**
-	 * When the class instance is annotated with
-	 * {@link Autowired}, it will be looking for the actual
-	 * instance from the defined beans.
-	 * <p>
-	 * In our project, all the beans are defined in
-	 * the {@link App} class.
-	 */
-	@Autowired
-	private UserManager userManager;	
-	
-	@RequestMapping(value = "/cs580/greetingsEarthing")
-	String starman() {
-		return "There's a Staaaaaaaaaaaaaaaaaaaaaaarman, waiting in the sky. " +
-				"He'd like to come and meet us, but he thinks he'd blow our " +
-				"minds.";
-	}
-
-	/**
 	 * This is a simple example of how the HTTP API works.
 	 * It returns a String "OK" in the HTTP response.
 	 * To try it, run the web application locally,
